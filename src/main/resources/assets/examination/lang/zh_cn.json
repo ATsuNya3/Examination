@@ -1,0 +1,11 @@
+{
+  "item.examination.message1":"物品信息1",
+  "item.examination.message2":"物品信息2",
+  "item.examination.message3":"物品信息3",
+  "item.examination.message4":"物品信息4",
+  "item.examination.message5":"物品信息5",
+  "item.examination.info":"消息设置",
+  "item.examination.info.desc": "§7你可以输入以下指令修改消息：/itemdata setmessage <String>",
+  "block.examination.messagerecorder":"消息形式方块",
+  "itemgroup.examination.exmainationtab": "消息方块和物品"
+}
