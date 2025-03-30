@@ -1,0 +1,11 @@
+{
+  "item.examination.message1":"ItemMessage1",
+  "item.examination.message2":"ItemMessage2",
+  "item.examination.message3":"ItemMessage3",
+  "item.examination.message4":"ItemMessage4",
+  "item.examination.message5":"ItemMessage5",
+  "item.examination.info":"InfoSet",
+  "item.examination.info.desc": "§7You can input the cammand:/itemdata setmessage <String> to change the message.",
+  "block.examination.messagerecorder":"MessageRecorder",
+  "itemgroup.examination.exmainationtab": "Message Item and Block"
+}
