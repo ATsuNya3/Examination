@@ -21,7 +21,7 @@ public class NetworkHandler {
     public static void registerPayloads(RegisterPayloadHandlersEvent event) {
         PayloadRegistrar registrar = event.registrar("1.0");
 
-        registrar.playToClient(
+        registrar.playToServer(
                 FabledAnimationPayload.TYPE,
                 FabledAnimationPayload.STREAM_CODEC,
                 createAnimationPayloadHandler()
