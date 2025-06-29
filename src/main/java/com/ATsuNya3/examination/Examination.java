@@ -11,7 +11,6 @@ public class Examination {
 
     public Examination(IEventBus modEventBus) {
         modEventBus.register(NetworkHandler.class);
-        NeoForge.EVENT_BUS.register(NetworkHandler.class);
     }
 }
 
