@@ -1,14 +1,14 @@
-package com.ATsuNya3.examination.event;
+package moe.gensoukyo.fabledinvokechannelmod.event;
 
-import com.ATsuNya3.examination.network.Handle;
-import com.ATsuNya3.examination.network.MyData;
+import moe.gensoukyo.fabledinvokechannelmod.network.Handle;
+import moe.gensoukyo.fabledinvokechannelmod.network.InvokeData;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
 import net.neoforged.neoforge.network.handling.DirectionalPayloadHandler;
 import net.neoforged.neoforge.network.registration.PayloadRegistrar;
 
-import static com.ATsuNya3.examination.Examination.MODID;
+import static moe.gensoukyo.fabledinvokechannelmod.FabledInvokeChannelMod.MODID;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, modid = MODID)
 public class ModEventSubscriber {
@@ -16,8 +16,8 @@ public class ModEventSubscriber {
     public static void register(final RegisterPayloadHandlersEvent event) {
         final PayloadRegistrar registrar = event.registrar("1");
         registrar.playBidirectional(
-                MyData.TYPE,
-                MyData.STREAM_CODEC,
+                InvokeData.TYPE,
+                InvokeData.STREAM_CODEC,
                 new DirectionalPayloadHandler<>(
                         Handle.ClientPayloadHandler::handleDataOnNetwork,
                         Handle.ServerPayloadHandler::handleDataOnNetwork
